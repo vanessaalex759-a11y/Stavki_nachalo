@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="СезоныСсылка" id="135">
+			<DataPath>Объект.Сезоны.Ref</DataPath>
+			<ContextMenu name="СезоныСсылкаКонтекстноеМеню" id="136"/>
+			<ExtendedTooltip name="СезоныСсылкаРасширеннаяПодсказка" id="137"/>
+		</InputField>
+		<UsualGroup name="Группа3" id="131">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="132"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="127">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="128"/>
+					<ChildItems>
+						<Button name="ПрочитатьФайлПолный" id="121">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПрочитатьФайлПолный</CommandName>
+							<ExtendedTooltip name="ПрочитатьФайлПолныйРасширеннаяПодсказка" id="122"/>
+						</Button>
+						<Button name="ПрочитатьФайлСаша" id="108">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПрочитатьФайлСаша</CommandName>
+							<ExtendedTooltip name="ПрочитатьФайлСашаРасширеннаяПодсказка" id="109"/>
+						</Button>
+						<Button name="ОчиститьТаблицу" id="123">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОчиститьТаблицу</CommandName>
+							<ExtendedTooltip name="ОчиститьТаблицуРасширеннаяПодсказка" id="124"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="129">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="130"/>
+					<ChildItems>
+						<Button name="ПрочитатьСтолбецХозяева" id="125">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПрочитатьСтолбецХозяева</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Название команд изменить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПрочитатьСтолбецХозяеваРасширеннаяПодсказка" id="126"/>
+						</Button>
+						<Button name="СоздатьПровестиДокументы" id="133">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьПровестиДокументы</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создаем 1  документ</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СоздатьПровестиДокументыРасширеннаяПодсказка" id="134"/>
+						</Button>
+						<Button name="УдалитьНолиикСезон24_25" id="160">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УдалитьНолиикСезон24_25</CommandName>
+							<ExtendedTooltip name="УдалитьНолиикСезон24_25РасширеннаяПодсказка" id="161"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="140">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="141"/>
+					<ChildItems>
+						<Button name="ПрочитатьФайлПолныйсПробелом" id="142">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.ПрочитатьФайлПолныйсПробелом</CommandName>
+							<ExtendedTooltip name="ПрочитатьФайлПолныйсПробеломРасширеннаяПодсказка" id="143"/>
+						</Button>
+						<Button name="РазбитьТЧ" id="144">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.РазбитьТЧ</CommandName>
+							<ExtendedTooltip name="РазбитьТЧРасширеннаяПодсказка" id="145"/>
+						</Button>
+						<Button name="ЗагрузитьСезон" id="146">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьСезон</CommandName>
+							<ExtendedTooltip name="ЗагрузитьСезонРасширеннаяПодсказка" id="147"/>
+						</Button>
+						<Button name="ЗагрузитьСезон1" id="148">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьСезон1</CommandName>
+							<ExtendedTooltip name="ЗагрузитьСезон1РасширеннаяПодсказка" id="149"/>
+						</Button>
+						<Button name="ЗагрузитьСезон2" id="150">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьСезон2</CommandName>
+							<ExtendedTooltip name="ЗагрузитьСезон2РасширеннаяПодсказка" id="151"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа5" id="154">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="155"/>
+					<ChildItems>
+						<Button name="ЗагрузитьСезон3" id="152">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьСезон3</CommandName>
+							<ExtendedTooltip name="ЗагрузитьСезон3РасширеннаяПодсказка" id="153"/>
+						</Button>
+						<Button name="ЗагрузитьСезон4" id="156">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьСезон4</CommandName>
+							<ExtendedTooltip name="ЗагрузитьСезон4РасширеннаяПодсказка" id="157"/>
+						</Button>
+						<Button name="ЗагрузитьСезон5" id="158">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьСезон5</CommandName>
+							<ExtendedTooltip name="ЗагрузитьСезон5РасширеннаяПодсказка" id="159"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ПутьКФайлу" id="1">
+			<DataPath>Объект.ПутьКФайлу</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="StartChoice">ПутьКФайлуНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<RadioButtonField name="ФорматФайла" id="4">
+			<DataPath>Объект.ФорматФайла</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">TXT</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">CSV</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">Excel</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">DBF</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">XML</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">JSON</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ФорматФайлаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ФорматФайлаРасширеннаяПодсказка" id="6"/>
+		</RadioButtonField>
+		<CommandBar name="Кнопки" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="КнопкиРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<Button name="ДанныеФайлаПрочитатьФайл" id="32">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ПрочитатьФайл</CommandName>
+					<ExtendedTooltip name="ДанныеФайлаПрочитатьФайлРасширеннаяПодсказка" id="33"/>
+				</Button>
+				<Button name="ДанныеФайлаСопоставитьДанные" id="34">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.СопоставитьДанные</CommandName>
+					<ExtendedTooltip name="ДанныеФайлаСопоставитьДанныеРасширеннаяПодсказка" id="35"/>
+				</Button>
+				<Button name="ДанныеФайлаЗаписатьДанные" id="36">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ЗаписатьДанные</CommandName>
+					<ExtendedTooltip name="ДанныеФайлаЗаписатьДанныеРасширеннаяПодсказка" id="37"/>
+				</Button>
+				<Button name="ЗаписатьДанныеТуры" id="119">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ЗаписатьДанныеТуры</CommandName>
+					<ExtendedTooltip name="ЗаписатьДанныеТурыРасширеннаяПодсказка" id="120"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<Table name="ДанныеФайла1" id="65">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДанныеФайла1</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеФайла1КонтекстноеМеню" id="66"/>
+			<AutoCommandBar name="ДанныеФайла1КоманднаяПанель" id="67"/>
+			<ExtendedTooltip name="ДанныеФайла1РасширеннаяПодсказка" id="68"/>
+			<SearchStringAddition name="ДанныеФайла1СтрокаПоиска" id="69">
+				<AdditionSource>
+					<Item>ДанныеФайла1</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеФайла1СтрокаПоискаКонтекстноеМеню" id="70"/>
+				<ExtendedTooltip name="ДанныеФайла1СтрокаПоискаРасширеннаяПодсказка" id="71"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеФайла1СостояниеПросмотра" id="72">
+				<AdditionSource>
+					<Item>ДанныеФайла1</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеФайла1СостояниеПросмотраКонтекстноеМеню" id="73"/>
+				<ExtendedTooltip name="ДанныеФайла1СостояниеПросмотраРасширеннаяПодсказка" id="74"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеФайла1УправлениеПоиском" id="75">
+				<AdditionSource>
+					<Item>ДанныеФайла1</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеФайла1УправлениеПоискомКонтекстноеМеню" id="76"/>
+				<ExtendedTooltip name="ДанныеФайла1УправлениеПоискомРасширеннаяПодсказка" id="77"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДанныеФайла1НомерСтроки" id="78">
+					<DataPath>Объект.ДанныеФайла1.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайла1НомерСтрокиКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ДанныеФайла1НомерСтрокиРасширеннаяПодсказка" id="80"/>
+				</LabelField>
+				<CheckBoxField name="ДанныеФайла1Сыгран" id="81">
+					<DataPath>Объект.ДанныеФайла1.Сыгран</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДанныеФайла1СыгранКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ДанныеФайла1СыгранРасширеннаяПодсказка" id="83"/>
+				</CheckBoxField>
+				<InputField name="ДанныеФайла1Дата" id="84">
+					<DataPath>Объект.ДанныеФайла1.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайла1ДатаКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ДанныеФайла1ДатаРасширеннаяПодсказка" id="86"/>
+				</InputField>
+				<InputField name="ДанныеФайла1Турнир" id="87">
+					<DataPath>Объект.ДанныеФайла1.Турнир</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайла1ТурнирКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ДанныеФайла1ТурнирРасширеннаяПодсказка" id="89"/>
+				</InputField>
+				<InputField name="ДанныеФайла1Счет" id="110">
+					<DataPath>Объект.ДанныеФайла1.Счет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайла1СчетКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ДанныеФайла1СчетРасширеннаяПодсказка" id="112"/>
+				</InputField>
+				<InputField name="ДанныеФайла1КомандаХозяев" id="90">
+					<DataPath>Объект.ДанныеФайла1.КомандаХозяев</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайла1КомандаХозяевКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ДанныеФайла1КомандаХозяевРасширеннаяПодсказка" id="92"/>
+				</InputField>
+				<InputField name="ДанныеФайла1ЗабилиХозяева" id="93">
+					<DataPath>Объект.ДанныеФайла1.ЗабилиХозяева</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ДанныеФайла1ЗабилиХозяеваКонтекстноеМеню" id="94"/>
+					<ExtendedTooltip name="ДанныеФайла1ЗабилиХозяеваРасширеннаяПодсказка" id="95"/>
+				</InputField>
+				<InputField name="ДанныеФайла1КомандаГостей" id="96">
+					<DataPath>Объект.ДанныеФайла1.КомандаГостей</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайла1КомандаГостейКонтекстноеМеню" id="97"/>
+					<ExtendedTooltip name="ДанныеФайла1КомандаГостейРасширеннаяПодсказка" id="98"/>
+				</InputField>
+				<InputField name="ДанныеФайла1ЗабилиГости" id="99">
+					<DataPath>Объект.ДанныеФайла1.ЗабилиГости</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ДанныеФайла1ЗабилиГостиКонтекстноеМеню" id="100"/>
+					<ExtendedTooltip name="ДанныеФайла1ЗабилиГостиРасширеннаяПодсказка" id="101"/>
+				</InputField>
+				<InputField name="ДанныеФайла1Сезон" id="102">
+					<DataPath>Объект.ДанныеФайла1.Сезон</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайла1СезонКонтекстноеМеню" id="103"/>
+					<ExtendedTooltip name="ДанныеФайла1СезонРасширеннаяПодсказка" id="104"/>
+				</InputField>
+				<InputField name="ДанныеФайла1Тур" id="105">
+					<DataPath>Объект.ДанныеФайла1.Тур</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайла1ТурКонтекстноеМеню" id="106"/>
+					<ExtendedTooltip name="ДанныеФайла1ТурРасширеннаяПодсказка" id="107"/>
+				</InputField>
+				<InputField name="ДанныеФайла1КтоИграл" id="113">
+					<DataPath>Объект.ДанныеФайла1.КтоИграл</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайла1КтоИгралКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="ДанныеФайла1КтоИгралРасширеннаяПодсказка" id="115"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="ДанныеФайла" id="40">
+			<Visible>false</Visible>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДанныеФайла</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеФайлаКонтекстноеМеню" id="41"/>
+			<AutoCommandBar name="ДанныеФайлаКоманднаяПанель" id="42">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДанныеФайлаРасширеннаяПодсказка" id="43"/>
+			<SearchStringAddition name="ДанныеФайлаСтрокаПоиска" id="44">
+				<AdditionSource>
+					<Item>ДанныеФайла</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеФайлаСтрокаПоискаКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="ДанныеФайлаСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеФайлаСостояниеПросмотра" id="47">
+				<AdditionSource>
+					<Item>ДанныеФайла</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеФайлаСостояниеПросмотраКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ДанныеФайлаСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеФайлаУправлениеПоиском" id="50">
+				<AdditionSource>
+					<Item>ДанныеФайла</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеФайлаУправлениеПоискомКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ДанныеФайлаУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДанныеФайлаНомерСтроки" id="53">
+					<DataPath>Объект.ДанныеФайла.LineNumber</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайлаНомерСтрокиКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ДанныеФайлаНомерСтрокиРасширеннаяПодсказка" id="55"/>
+				</LabelField>
+				<InputField name="ДанныеФайлаНаименование" id="56">
+					<DataPath>Объект.ДанныеФайла.Наименование</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайлаНаименованиеКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ДанныеФайлаНаименованиеРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ДанныеФайлаНаименованиеПолное" id="59">
+					<DataPath>Объект.ДанныеФайла.НаименованиеПолное</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайлаНаименованиеПолноеКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ДанныеФайлаНаименованиеПолноеРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ДанныеФайлаУНП" id="62">
+					<DataPath>Объект.ДанныеФайла.УНП</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеФайлаУНПКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ДанныеФайлаУНПРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаДанныхИзФайла1</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьФайл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveValues</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПрочитатьФайл</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СопоставитьДанные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Sort</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗаписатьДанные" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные в 1С</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ReadChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПрочитатьФайлСаша" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файл саша</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файл саша</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьФайлСаша</Action>
+		</Command>
+		<Command name="ЗаписатьДанныеТуры" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные туры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные туры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьДанныеТуры</Action>
+		</Command>
+		<Command name="ПрочитатьФайлПолный" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файл полный</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файл полный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьФайлПолный</Action>
+		</Command>
+		<Command name="ОчиститьТаблицу" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьТаблицу</Action>
+		</Command>
+		<Command name="ПрочитатьСтолбецХозяева" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать столбец хозяева</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать столбец хозяева</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьСтолбецХозяева</Action>
+		</Command>
+		<Command name="СоздатьПровестиДокументы" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать провести документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать провести документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПровестиДокументы</Action>
+		</Command>
+		<Command name="СоздаемДокументы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создаем документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создаем документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздаемДокументы</Action>
+		</Command>
+		<Command name="ПрочитатьФайлПолныйсПробелом" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файл полныйс пробелом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файл полныйс пробелом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьФайлПолныйсПробелом</Action>
+		</Command>
+		<Command name="РазбитьТЧ" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разбить ТЧ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разбить ТЧ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РазбитьТЧ</Action>
+		</Command>
+		<Command name="ЗагрузитьСезон" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить Сезон 2019_2020</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сезон</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСезон</Action>
+		</Command>
+		<Command name="ЗагрузитьСезон1" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить Сезон 2020_2021</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сезон1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСезон1</Action>
+		</Command>
+		<Command name="ЗагрузитьСезон2" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить Сезон 2021_2022</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сезон2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСезон2</Action>
+		</Command>
+		<Command name="ЗагрузитьСезон3" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить Сезон 2022_2023</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сезон3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСезон3</Action>
+		</Command>
+		<Command name="ЗагрузитьСезон4" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить Сезон 2023_2024</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сезон4</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСезон4</Action>
+		</Command>
+		<Command name="ЗагрузитьСезон5" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить Сезон 2024_2025</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сезон5</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСезон5</Action>
+		</Command>
+		<Command name="УдалитьНолиикСезон24_25" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить нолиик сезон 24 25</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить нолиик сезон24 25</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьНолиикСезон24_25</Action>
+		</Command>
+	</Commands>
+</Form>

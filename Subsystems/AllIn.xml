@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="fcdda0cb-bb40-4d89-84cc-1dccd8d5c6c0">
+		<Properties>
+			<Name>AllIn</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>All in</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Тур</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Команды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.КаждыйСКаждым</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДанныеПоКоманде</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СтатистикаСезона</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сезоны</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Страны</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОбработкиПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Игры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ТаблицыКоманд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.МестаКоманд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТекущийСезон</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТекущаяСтрана</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ТаблицаСоперниковКоманды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.хзЦвета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкаСистемныхЦветов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.МестаПоСезонам</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
